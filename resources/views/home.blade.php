@@ -28,6 +28,20 @@
                         
                     </div>
                 @endforeach
+                <div class='row'>
+                @foreach ($filterTrips as $fTrip)
+                    <div class="col-2 film">
+                        <div class=''>{{$fTrip["ap_partenza"]}}</div>
+                        <div class=''>{{$fTrip["ap_destinazione"]}}</div>
+                        <div class=''>{{$fTrip["scali"]}}</div>
+                        <div class=''>{{$fTrip["indirizzo_hotel"]}}</div>
+                        <div class=''>{{$fTrip["biglietti"]}}</div>
+                        <div class=''>{{$fTrip["luoghi_da_visitare"]}}</div>
+                        <div class=''>{{$fTrip["triPrice"]}}</div>
+                        
+                        
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>

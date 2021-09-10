@@ -9,7 +9,9 @@ class HomeController extends Controller
 {
     public function index(){
         $allTrips =  Trip::all(); //leggo il database attraverso il model
+        $filterTrips =  Trip::where('scali','>',2)->get(); //leggo il database  filtrato attraverso il model
         dump($allTrips);
-        return view('home', compact ('allTrips')); // lo inoltro come combinazione chiave valore
+        dump($filterTrips);
+        return view('home', compact ('allTrips','filterTrips')); // lo inoltro come combinazione chiave valore
     }
 }
