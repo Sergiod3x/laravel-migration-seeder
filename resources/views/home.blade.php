@@ -29,6 +29,7 @@
                     </div>
                 @endforeach
                 <div class='row'>
+               <h1>Filtro solo i viaggi con scali superiori a 2</h1> <br>
                 @foreach ($filterTrips as $fTrip)
                     <div class="col-2 film">
                         <div class=''>{{$fTrip["ap_partenza"]}}</div>
